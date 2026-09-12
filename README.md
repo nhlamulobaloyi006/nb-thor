@@ -45,7 +45,7 @@ nb-thor/
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/nb-thor.git
+git clone https://github.com/nhlamulobaloyi006/nb-thor.git
 cd nb-thor
 ```
 
