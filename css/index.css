@@ -1,0 +1,177 @@
+.edit-form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 100vh;
+    background-color: transparent;
+    z-index: 999;
+    width: 100%;
+}
+
+.show-form-container {
+    display: flex;
+}
+
+.form-info {
+    opacity: 1;
+    width: 45%;
+    border: 1px solid #ffffff;
+    border-radius: .8rem;
+    background-color:rgba(100, 148, 237, 0.603);
+    color: #ffffff;
+    backdrop-filter: blur(5px);
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 1rem;
+    margin: 0 0 1rem 0;
+}
+
+input {
+    display: flex;
+    flex-direction: column;
+    border-radius:.8rem;
+    padding: .5rem;
+    background-color: rgba(100, 148, 237, 0.406);
+    width: 75%;
+    margin: 0 0 1rem 0;
+}
+
+button{
+    width: 30%;
+    padding: .5rem;
+    border-radius: .8rem;
+    cursor: pointer;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid green;
+    padding: .5rem;
+    border-radius: .8rem;
+}
+
+.opacity {
+    opacity: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent ;
+    justify-content: center;
+    padding: 1rem 0.9rem;
+    gap: 1rem;
+    width: 100%;
+    margin: auto;
+}
+
+.container-v2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 0px 0px 12px 5px;
+    background-color: rgba(100, 148, 237, 0.603);
+    border-radius: 0.5rem;
+    margin: -2rem 0 0 0;
+    width: 100%;
+    max-width: 50rem;
+    min-width: 15.625rem;
+    padding: 1rem;
+    gap: 1rem;
+    animation: moveUp 1s ease-in-out;
+}
+
+.edit {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.edit p {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.Bio-container {
+    flex: auto;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    opacity: 0;
+    animation: fade 1.2s ease-in-out forwards;
+    animation-delay: .5s;
+    /* animation-delay: .5s; */
+}
+
+.Bio-container h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0 0 1rem 0;
+    color: white;
+    text-align: center;
+}
+
+.Bio-container h4 {
+    color: white;
+    text-align: center;
+}
+
+
+.Powerstats-container {
+    flex: auto;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    opacity: 0;
+    animation: fade 1.2s ease-in-out forwards;
+    animation-delay: .5s;
+}
+
+.Powerstats-container h1 {
+    margin: 0 0 1rem 0;
+    color: aliceblue;
+    text-align: center;
+}
+
+.Powerstats-container h4 {
+    color: aliceblue;
+    text-align: center;
+}
+
+.slide {
+    flex-wrap: wrap;
+    background-color: orange;
+    box-shadow: 1px 1px 1px 1px rgb(0, 140, 255);
+    border: 0.9px solid yellow;
+    border-radius: 0.5rem;
+    height: 1.1vh;
+    overflow: hidden;
+    margin: 0 0 0.8rem 0;
+}
+
+.slide-fill {
+    flex-wrap: wrap;
+    background-color: rgb(24, 221, 239);
+    border-radius: 0.5rem;
+    height: 1vh;
+    opacity: 0;
+    animation: fill 5s alternate linear forwards;
+    min-width: none;
+}

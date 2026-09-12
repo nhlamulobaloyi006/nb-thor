@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME | THOR</title>
+  <meta name="author" content="Nhlamulo Baloyi">
+  <meta name="description" content="My Superhero App">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="menu-bar">
+    <nav>
+        <ul class="sideBar">
+        <li onclick="hideSidebar()"><a href=""><svg class="svg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      <ul>
+        <li><a href="#">THOR</a></li>
+        <li class="hideonmobile"><a href="index.html">HOME</a></li>
+        <li class="hideonmobile"><a href="about.html">ABOUT</a></li>
+        <li class="hideonmobile"><a href="gallery.html">GALLERY</a></li>
+        <li class="hideonmobile"><a href="contact.html">CONTACT</a></li>
+        <li class="hideontablet" onclick="showSidebar()"><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="edit-form-container">
+    <div class="form-info">
+      <div class="heading" onclick="closeForm()">
+        <h2>THOR</h2>
+        <p>X</p>
+      </div>
+      <div class="inputs">
+        <input type="text" id="intelligenceInput" placeholder="Intelligence e.g 50">
+        <input type="text" id="strengthInput" placeholder="Strength e.g 50">
+        <input type="text" id="speedInput" placeholder="Speed e.g 50">
+        <input type="text" id="durabilityInput" placeholder="Durability e.g 50">
+        <input type="text" id="powerInput" placeholder="Power e.g 50">
+        <input type="text" id="combatInput" placeholder="Combat e.g 50">
+        <button id="submitForm">DONE</button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="container-v2">
+      <div class="Bio-container">
+        <h1>Bio</h1>
+        <h4>Full Name : Thor Odinson</h4>
+        <h4>Place of Birth : Asgard</h4>
+        <h4>Race : Asgardian</h4>
+     </div>
+    <div class="Powerstats-container">
+      <div class="edit">
+        <p onclick="showForm()">✏</p>
+      </div>
+      <h1>Powerstats</h1>
+      <h4 id="intelligence">Intelligence : 70%</h4>
+      <div class="slide">
+        <div class="slide-fill" style="width: 100%;" id="fill1"></div>
+      </div>
+      <h4 id="strength">Strength : 100%</h4>
+      <div class="slide">
+        <div class="slide-fill" style="width: 100%;" id="fill2"></div>
+      </div>
+      <h4 id="speed">Speed : 92%</h4>
+      <div class="slide">
+        <div class="slide-fill" style="width:92%;" id="fill3"></div>
+      </div>
+      <h4 id="durability">Durability : 100%</h4>
+      <div class="slide">
+        <div class="slide-fill" style="width: 100%;" id="fill4"></div>
+      </div>
+      <h4 id="power">Power : 100%</h4>
+      <div class="slide">
+        <div class="slide-fill" style="width: 100%;" id="fill5"></div>
+      </div>
+      <h4 id="combat">Combat : 100%</h4>
+      <div class="slide">
+        <div class="slide-fill" style="width: 100%;" id="fill6"></div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <footer>
+    <h4>&nbsp; Copyright &copy; | THOR</h4>
+  </footer>
+
+  <script  src="main.js"></script>
+</body>
+</html>
